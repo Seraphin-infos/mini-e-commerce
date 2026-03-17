@@ -522,7 +522,7 @@ identiterProfil.append(emailProfil);
 
 // IMG_PROFIL
 const imgProfil = document.querySelector('.img-profil');
-imgProfil.innerHTML = connexion.nom[0];
+imgProfil.innerHTML = connexion.nom[0].toUpperCase();
 
 
 
@@ -537,7 +537,7 @@ if (connecter) {
     btnAcheter.forEach((el) => {
         el.style.display = "inherit";
     })
-
+    window.location.href = "#accueil";
     // affichage bouton deconnexion
     inscription.style.display = "none";
     deconnexion.style.display = "block";
